@@ -30,6 +30,10 @@ public class inputGUI implements ActionListener {
         try {
             appInfo = deSerializeAppInfo();
             tableEntries = deSerialize();
+
+            /** IMPORTANT THIS IS HOW U HCNAGE THE COLOR SCHEME INDEX
+            appInfo.colorSchemeIndex = number u want;
+             **/
             colorScheme = appInfo.colorSchemes[appInfo.colorSchemeIndex];
         } catch (IOException e) {
             throw new RuntimeException(e);
